@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-big-card',
@@ -6,16 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./big-card.component.css']
 })
 export class BigCardComponent implements OnInit {
-
   @Input()
-  photoCover:string =""
+  Photo:string="";
   @Input()
-  cardTitle:string= ""
+  AuthorName: string="";
   @Input()
-  cardDescription:string =""
+  CardTitle: string = "";
   @Input()
-  Id:string="0"
-
+  Content:string = "";
   constructor() { }
 
   ngOnInit(): void {
